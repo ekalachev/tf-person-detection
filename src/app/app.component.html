@@ -1,6 +1,7 @@
 <div class="p-3">
     <div>
         <video autoplay playsInline muted #videoElement></video>
+        <div class="recording-text" *ngIf="isRecording"><span>Recording!</span></div>
     </div>
     <div>
         <div class="btn-toolbar" role="toolbar">

@@ -1,0 +1,7 @@
+.recording-text {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    color: red;
+    font-weight: 600;
+}
