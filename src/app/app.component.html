@@ -1,0 +1,24 @@
+<div class="p-3">
+    <div>
+        <video autoplay playsInline muted #videoElement></video>
+    </div>
+    <div>
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group mr-2" role="group">
+                <button class="btn btn-success" (click)="start()" [disabled]="!isStartEnabled">Start</button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+                <button class="btn btn-danger" (click)="stop()" [disabled]="!isStopEnabled">Stop</button>
+            </div>
+        </div>
+        <div class="row p-3">
+            <h3>Records:</h3>
+            <div class="card mt-3 w-100" *ngFor="let record of records">
+                <div class="card-body">
+                    <h5 class="card-title">{{record.title}}</h5>
+                    <video controls src={{record.href}}></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
